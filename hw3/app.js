@@ -59,7 +59,7 @@ function tryNumber(num = 0) {
   }
 }
 
-tryNumber(11); // Я аж залип играя в эту "игрушку", обновляя браузер))
+tryNumber(8); // Я аж залип играя в эту "игрушку", обновляя браузер))
 
 // Задание 5
 
@@ -149,9 +149,7 @@ function oddArray(arr) {
       odd: !!(i % 2)
     });
   }
-  
   return newArray;
   }
-
 
 console.log(oddArray([1, 2, 3, 5, 8, 9, 10]))
