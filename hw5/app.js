@@ -1,81 +1,76 @@
+// const text = document.querySelector('div.first p span');
+// const text = document.getElementById('Ia');
+// const text = document.querySelector('div.first p span')
+// const text = document.getElementsByClassName('first');
+// const text = document.getElementsByName('input');
+// const text = document.getElementsByTagName('div')
+// console.log(text);
 
-// Задачи на зис
+// const input = document.querySelector('input');
+// const btn = document.querySelector('button.btn-get-data');
+// console.log(input);
+// console.log(btn);
 
-// Задание 1
+// function handleClick() {
+//   console.log('Hello!')
+// }
 
-const rectagle = {
-  width: 3,
-  height: 40,
-  getSquare: function () {
-    return (this.width * this.height);
-  } 
-}
-console.log(rectagle.getSquare());
+// input.addEventListener('click', function(event){
+//   console.log('click click', event)
+// })
 
-// Задание 2
+// const input = document.querySelector('input.first');
+// const input2 = document.querySelector('input.second');
+// const btn = document.querySelector('.btn-get-data');
 
-const price = {
-  price: 10,
-  discount: '15%',
-  getPrice: function() {
-    return this.price;
-  },
-  getPriceWithDiscount: function() {
-    return (this.price - (parseFloat(this.discount) * this.price) / 100);
-  }
-}
+// btn.addEventListener('click', () => {
+//   console.log('myvalue ----', (+(input.value) + +(input2.value)) )
+// })
 
-console.log(price.getPriceWithDiscount())
+const ulFirst = document.querySelector('ul.first');
+const liList1 = document.querySelectorAll('ul.first li');
 
-// Задание 3
+// console.log('list of li', liList1);
+// console.log('list of li chilNodes', ulFirst.childNodes);
+// console.log('list of li children', ulFirst.children);
 
-const object = {
-  height: 10,
-  getPlusOne: function() {
-    return this.height ++;
-  }
-}
-object.getPlusOne();
-console.log(object.height);
+console.log('sib 1 nextsibl', ulFirst.nextSibling);
+console.log('sib nextelement', ulFirst.nextElementSibling);
 
-// Задание 4
+// console.log('parent', ulFirst.parentElement);
 
-const numerator = {
-  value: 1,
-  double: function() {
-    this.value *= 2;
-    return this;
-  },
-  plusOne: function() {
-    this.value ++;
-    return this;
-  },
-  minusOne: function() {
-    this.value --;
-    return this;
-  }
-}
+// console.log('last child', ulFirst.lastElementChild);
+// console.log('first child', ulFirst.firstElementChild);
 
-numerator.double().plusOne().plusOne().minusOne();
-console.log(numerator.value);
+// const span = document.querySelector('#spanID');
 
-// Задача на конструктор 
+// console.log(span.closest('div'))
 
-function Calculator() {
-  this.read = function() {
-    this.a = +prompt('Укажите первое число', 0);
-    this.b = +prompt('Укажите второе число', 0);
-  };
-  this.sum = function() {
-    return this.a + this.b;
-  }
-  this.mul = function() {
-    return this.a * this.b;
-  }
-}
+const btn1 = document.getElementById('hotels');
+const btn2 = document.getElementById('cars');
+const btn3 = document.getElementById('flights');
 
-let calc = new Calculator();
-calc.read();
+const tab1 = document.querySelector('.hotels');
+const tab2 = document.querySelector('.cars');
+const tab3 = document.querySelector('.flights');
 
-alert("Sum= " + calc.sum());
-alert("Mul= " + calc.mul());
+const tabsArraay = document.querySelectorAll('.tab');
+
+btn1.addEventListener('click', function() {
+  tabsArraay.forEach((node) => {
+    node.classList.remove('show');
+  })
+  tab1.classList.add('show');
+})
+btn2.addEventListener('click', function() {
+  tabsArraay.forEach((node) => {
+    node.classList.remove('show');
+  })
+  tab2.classList.add('show');
+})
+btn3.addEventListener('click', function() {
+  tabsArraay.forEach((node) => {
+    node.classList.remove('show');
+  })
+  tab3.classList.add('show');
+})
