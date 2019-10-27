@@ -5,7 +5,62 @@
     <title>JS</title>
 </head>
 <body>
-    
+    <!-- <input class="first" type="text" name="input" value="">
+    <input class="second" type="text" name="input" value="">
+    <button class="btn-get-data">get result</button> -->
+
+    <div class="parent">
+        <span id="spanID">children</span>
+    </div>
+
+    <span>sibling1</span>
+     <ul class="first">
+         <li>elem1</li>
+         <li>elem2</li>
+         <li>elem3</li>
+     </ul>
+     <span>sibling2</span>
+     <ul class="second">
+         <li>elem1</li>
+         <li>elem2</li>
+         <li>elem3</li>
+     </ul>
+     
+     <style>
+         .tab {
+             width: 300px;
+             height: 200px;
+             display: none;
+         }
+         .hotels {
+             background: chocolate;
+         }
+         .cars {
+             background: crimson;
+         }
+         .flights {
+             background: gray;
+         }
+         .show {
+             display: block;
+         }
+     </style>
+     <div class="tabs">
+         <div>
+             <button id="hotels">hotels</button>
+             <button id="cars">cars</button>
+             <button id="flights">flights</button>
+         </div>
+         <div class="tab hotels show">
+             info about hotels
+         </div>
+         <div class="tab cars">
+             info about cars
+         </div>
+         <div class="tab flights">
+             info about flights
+         </div>
+     </div>
 </body>
 <script src="app.js"></script>
 </html>
