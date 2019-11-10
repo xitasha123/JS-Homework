@@ -1,0 +1,20 @@
+#left {
+    width: 250px;
+    border-right: 1px solid green;
+}
+
+#right {
+    width: calc(100% - 250px);
+    padding: 0 15px;
+    
+}
+
+#wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.img-wrapper {
+    display: inline-block;
+}
