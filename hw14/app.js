@@ -74,7 +74,7 @@ function startGame() {
         isPlaying =true;
         setTimeout(() =>{
             isPlaying = false;
-        }, 3000)
+        }, 23000)
     } 
     else {
         nameWarning.style.display = 'block';
