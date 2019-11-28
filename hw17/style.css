@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background: #dbddde;
+    padding: 0 15px;
+    margin: 50px auto 0;
+    width: 800px;
+}
+
+section{
+    padding: 30px 10px;
+}
+
+.container-header{
+    border-left: 3px solid #9c9c9c;
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+h1{
+    padding-right: 7px;
+    color: #546372;
+}
+
+.border{
+    width: 100%;
+    height: 1px;
+    background: #bfbaba;
+    margin-top: 15px;
+}
+
+.btn-block, .invoices{
+    padding: 15px;
+    background: white;
+    border: 1px solid #decbcb;
+    border-radius: 2px;
+    margin-bottom: 25px;
+}
+
+h2{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.btn{
+    background: #0c4066;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.table{
+
+    border: none;
+}
+
+thead{
+    background: #dbddde;
+    color: #7e8c9a;
+}
+
+tbody td{
+    padding: 10px;
+    border-right: none;
+    border-bottom: 1px solid #bfbaba;
+}
+
+th{
+    padding: 10px 30px;
+}
