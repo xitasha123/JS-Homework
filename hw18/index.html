@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container-hidden">
+        <div class="container">
+            <section class="modal-section">
+                <div class="container-header">
+                    <h1>Invoice</h1>
+                    <div class="border"></div>
+                </div>
+                <form action="#" class="modal-content">
+                    <div class="inputs-holder">
+                        <div class="input-container d-f fw-w row">
+                            <div class="col-2">
+                                <div class="modal-input-holder">
+                                    <label for="modal-unput">Number</label>
+                                    <input class="modal-input" type="number" name="number">
+                                </div>
+                            </div>
+                        <div class="col-2">
+                            <div class="modal-input-holder">
+                                <label for="modal-unput">Invoice Data</label>
+                                <input class="modal-input" name="invoice" type="date">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="modal-input-holder">
+                                <label for="modal-unput">Supply Date</label>
+                                <input class="modal-input" name="supply" type="date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-holder">
+                        <label for="comment">Comment</label>
+                        <textarea name="comment" class="comment"></textarea>
+                    </div>
+                    </div>
+                    <div class="btn-holder d-f">
+                        <button class="btn save">Save</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+    <div class="container-visible">
+        <section class="see-section">
+            <div class="container-header">
+                <h1>Invoice</h1>
+                <div class="border"></div>
+            </div>
+            <div class="btn-block">
+                <h2>Actions</h2>
+                <button class="btn add-new">Add new</button>
+            </div>
+            <div class="invoices">
+                <h2>Invoices</h2>
+                <table class="table" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <th>Create</th>
+                        <th>No</th>
+                        <th>Supply</th>
+                        <th>Comment</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+    
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
+
